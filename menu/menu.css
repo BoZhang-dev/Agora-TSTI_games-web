@@ -1,5 +1,5 @@
 #background{
-  background-image: ;
+  background-image: url("\\\\SRV-DC\\bzhang$\\Documents\\TSTI\\SIN\\Sequence 2\\codes and stuffs\\Agora-TSTI_games-web\\objets\\background.png") ;
   background-color: #1f2833;
 }
 
@@ -8,5 +8,15 @@
 }
 
 #h1style{
+  display:flex; 
+  justify-content: center; 
+  align-items: center;
   color: #66FCF1;
+}
+#grid-wapper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100xp, auto);
+  
 }
