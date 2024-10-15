@@ -1,7 +1,26 @@
 #background{
-    background-color: #1f2833;
+    background-image: url("\\\\SRV-DC\\nderiennic$\\Desktop\\Agora-TSTI_games-web\\objets\\img3.wallspic.com-vaporwave-retro-style_retro-retrofuturisme-synthwave-5120x2880.jpg");background-size:cover
+
 }
+
+
 
 #button-menu{
     padding: 12px 24px; background-color: #30beb7; font-size: 20px;
 }
+
+#BIENVENUE{ 
+    display:flex;justify-content: center;align-items: center; color:#42a4f5;font-family:Garamond;font-style: italic;font-size:15mm
+}
+#phrasesaccroche{
+    display:flex;justify-content: center;align-items: center; color:#ff8800;font-style:oblique ; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;display:flex;justify-content: center;align-items: center;font-size: 12.5mm;
+}
+#texte{
+    display:flex;justify-content: center;align-items: center;color:#f9fcff;font-size: 7mm
+}
+#tittle{
+    display:flex;justify-content: center;align-items: center;color: #0044ff;font-size:10mm;font-style: italic;
+}
+#boximage{
+    display:flex;justify-content: center;align-items: center;
+filter: drop-shadow(5px 5px 5px #000205);}
