@@ -17,11 +17,12 @@
 
 #title-style{
   font-size: 38px;
+  padding: 12px 24px;
   color: #42a4f5;
 }
 #text-style{
   font-size: 28px;
-  color: #add8ff;
+  color: #cee7ff;
 }
 
 #grid-wapper{
