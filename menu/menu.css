@@ -17,17 +17,17 @@
 
 #title-style{
   font-size: 38px;
-  padding: 12px 24px;
+  padding: 6px;
   color: #42a4f5;
 }
 #text-style{
-  font-size: 28px;
+  font-size: 24px;
   color: #cee7ff;
 }
 
 #grid-wapper{
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: minmax(auto, 38%);
   gap: 10%;
   grid-template-rows: auto;
   justify-content: center;
@@ -43,4 +43,10 @@
 }
 #grid-4{
   grid-column: 2; grid-row: 2;
+}
+
+#grid-img{
+  position: relative;
+  left: 8%;
+  box-shadow: 5px 5px 5px #000205;
 }
