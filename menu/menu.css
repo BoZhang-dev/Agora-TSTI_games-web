@@ -12,11 +12,34 @@
   justify-content: center; 
   align-items: center;
   color: #66FCF1;
+  font-size: 50px;
 }
+
+#title-style{
+  font-size: 38px;
+  color: #42a4f5;
+}
+#text-style{
+  font-size: 28px;
+  color: #add8ff;
+}
+
 #grid-wapper{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 10px;
-  grid-auto-rows: minmax(100xp, auto);
-  
+  grid-template-columns: auto;
+  gap: 10%;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+#grid-1{
+  grid-column: 1; grid-row: 1;
+}
+#grid-2{
+  grid-column: 2; grid-row: 1;
+}
+#grid-3{
+  grid-column: 1; grid-row: 2;
+}
+#grid-4{
+  grid-column: 2; grid-row: 2;
 }
