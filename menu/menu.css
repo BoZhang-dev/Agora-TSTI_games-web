@@ -1,10 +1,14 @@
 #background{
-  background-image: url("\\\\SRV-DC\\bzhang$\\Documents\\TSTI\\SIN\\Sequence 2\\codes and stuffs\\Agora-TSTI_games-web\\objets\\background.png") ;
+  background-image: url("\\\\SRV-DC\\bzhang$\\Documents\\TSTI\\SIN\\Sequence 2\\codes and stuffs\\Agora-TSTI_games-web\\objets\\background\\background.png") ;
   background-color: #1f2833;
 }
 
 #button-menu{
   padding: 12px 24px; background-color: #30beb7; font-size: 20px;
+}
+
+#button-connexion{
+  padding: 12px 24px; background-color: #31dad1; font-size: 20px;
 }
 
 #h1style{
