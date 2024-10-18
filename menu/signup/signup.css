@@ -13,8 +13,6 @@
 
   #h1style{
     display:flex; 
-    justify-content: center; 
-    align-items: center;
     color: #66FCF1;
     font-size: 50px;
   }
@@ -27,6 +25,5 @@
   #text-style{
     font-size: 24px;
     color: #cee7ff;
-    text-align: right;
   }
   
