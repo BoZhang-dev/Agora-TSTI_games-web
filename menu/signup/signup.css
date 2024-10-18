@@ -8,7 +8,7 @@
   }
   
   #button-connexion{
-    padding: 12px 24px; background-color: #31dad1; font-size: 20px;
+    padding: 8px 18px; background-color: #31dad1; font-size: 20px;
   }
 
   #h1style{
@@ -27,5 +27,6 @@
   #text-style{
     font-size: 24px;
     color: #cee7ff;
+    text-align: right;
   }
-
+  
