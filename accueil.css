@@ -1,5 +1,5 @@
 #background{
-    background-image: url("\\\\SRV-DC\\nderiennic$\\Desktop\\Agora-TSTI_games-web\\objets\\img3.wallspic.com-vaporwave-retro-style_retro-retrofuturisme-synthwave-5120x2880.jpg");background-size:cover
+    background-image: url("\\\\SRV-DC\\nderiennic$\\Pictures\\travail SIN\\fond-ecran-jeu-images-jeux-video-epiques_691560-11234.avif"); background-size: cover ;
 }
 
 
@@ -7,7 +7,9 @@
 #button-menu{
     padding: 12px 24px; background-color: #30beb7; font-size: 20px;
 }
-
+#button-connexion{
+    padding: 12px 24px; background-color: #30beb7; font-size: 20px;
+}
 #BIENVENUE{ 
     display:flex;justify-content: center;align-items: center; color:#42a4f5;font-family:Garamond;font-style: italic;font-size:15mm
 }
