@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAWG Game Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>RAWG Game Explorer</h1>
+        <nav>
+            <a href="javascript:void(0)" id="new-trending">Les Derniers Jeux Apparus</a>
+            <a href="javascript:void(0)" id="best-of-year">Meilleur Jeu de l'Année</a>
+            <a href="javascript:void(0)" id="all-games">Tout les Jeux</a>
+        </nav>
+        <!-- Search bar -->
+        <input type="text" id="search-bar" placeholder="Search games..." />
+    </header>
+    <main>
+        <div id="loading-overlay">
+            <div class="loading-text">Loading...</div>
+        </div>
+        <div id="content">
+            <h2 id="loading-message">Loading...</h2>
+        </div>
+        <button id="show-more-button" class="show-more-button">Show More</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
