@@ -52,3 +52,8 @@ body {
     text-align: center;
     color: #5dd1ff;
   }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
