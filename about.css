@@ -44,8 +44,10 @@ body {
   #text {
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
+    text-align: center;
   }
 
   #midt {
     font-size: 40px;
+    text-align: center;
   }
