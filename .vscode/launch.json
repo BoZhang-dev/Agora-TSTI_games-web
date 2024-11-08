@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open accueil.html",
-            "file": "\\\\SRV-DC\\bzhang$\\Documents\\TSTI\\SIN\\Sequence 2\\codes and stuffs\\Agora-TSTI_games-web\\index.html"
+            "file": "\\\\SRV-DC\\bzhang$\\Documents\\TSTI\\SIN\\Sequence 2\\codes and stuffs\\Agora-TSTI_games-web\\accueil.html"
         }
     ]
 }
