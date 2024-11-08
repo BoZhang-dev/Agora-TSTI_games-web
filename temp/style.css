@@ -1,4 +1,4 @@
-/* General Styles */
+/* Styles General */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,14 +7,14 @@ body {
   color: white;
 }
 
-/* Header Styles */
+/* Styles du Header */
 header {
   background-color: #333;
   color: white;
   padding: 1em;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Distributes space between items */
+  justify-content: space-between; /* distribuer les espaces entre contenu */
 }
 
 nav a {
@@ -29,7 +29,7 @@ nav a:hover {
   color: #ff6600;
 }
 
-/* Search Bar Styles */
+/* Styles du bar de recherche */
 #search-bar {
   padding: 8px;
   font-size: 1em;
@@ -37,19 +37,19 @@ nav a:hover {
   border-radius: 4px;
 }
 
-/* Loading Overlay Styles */
+/* Styles "Chargement" Overlay */
 #loading-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  background-color: rgba(0, 0, 0, 0.8); /* Couleur noir semi-transparent */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* On top of all content */
-  visibility: hidden; /* Hidden by default */
+  z-index: 9999; /* Se superposer sur tout les contenus */
+  visibility: hidden; /* Cacher par défaut */
 }
 
 .loading-text {
@@ -58,7 +58,7 @@ nav a:hover {
   text-align: center;
 }
 
-/* Content Styles */
+/* Styles de contenu */
 main {
   padding: 20px;
 }
@@ -75,7 +75,7 @@ main {
   font-size: 1.2em;
 }
 
-/* Game Card Styles */
+/* Styles du game card */
 .game-card {
   background-color: #004883;
   width: 300px;
@@ -108,7 +108,7 @@ main {
   background-color: #4c3a75;
 }
 
-/* "Show More" Button */
+/* Bouton "Afficher Plus" */
 .show-more-button {
   background-color: #ff6600;
   color: white;

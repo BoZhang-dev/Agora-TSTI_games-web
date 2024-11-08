@@ -1,17 +1,21 @@
-const API_KEY = 'fa64d94a92904f01822a854b93741b2f';
-const BASE_URL = 'https://api.rawg.io/api';
-const content = document.getElementById('content');
+const API_KEY = 'fa64d94a92904f01822a854b93741b2f'; //Le clé d'API
+const BASE_URL = 'https://api.rawg.io/api'; //La base pour utilisé l'API
+
+//asseigner les IDs en tant que variable 
+const content = document.getElementById('content'); 
 const loadingOverlay = document.getElementById('loading-overlay');
 const showMoreButton = document.getElementById('show-more-button');
 const searchBar = document.getElementById('search-bar');
-let currentCategory = 'new-trending';
+
+//Le site commence avec ces valeurs
+let currentCategory = 'all-games'; 
 let currentPage = 1;
 let searchQuery = '';
 
-// URL for the placeholder image when no game image is available
+// URL d'image à afficher quand l'image n'est pas disponible
 const placeholderImage = 'https://raw.githubusercontent.com/BoZhang-dev/Agora-TSTI_games-web/refs/heads/main/objets/icons/hide_image_256dp_E8EAED_FILL0_wght400_GRAD0_opsz48.png';
 
-// Initialize the page with event listeners and load default content
+// Initialisation
 function initialize() {
     document.getElementById('new-trending').addEventListener('click', () => loadGames('new-trending'));
     document.getElementById('best-of-year').addEventListener('click', () => loadGames('best-of-year'));
@@ -19,46 +23,47 @@ function initialize() {
 
     showMoreButton.addEventListener('click', () => loadGames(currentCategory, ++currentPage));
 
-    // Search functionality
+    // Fonction de recherche
     searchBar.addEventListener('input', () => {
         searchQuery = searchBar.value;
-        loadGames(currentCategory, 1); // Reset to page 1 when a new search is triggered
+        loadGames(currentCategory, 1); // Reset à la page 1 quand une nouvelle recherche s'effectue
     });
 
     loadGames(currentCategory);
 }
 
-// Show the loading overlay
+// Afficher le "loading" overlay
 function showLoading() {
     loadingOverlay.style.visibility = 'visible';
 }
 
-// Hide the loading overlay
+// Cacher le "loading" overlay
 function hideLoading() {
     loadingOverlay.style.visibility = 'hidden';
 }
 
-// Load games based on category and search query
+// Charger les jeux en fonction de la catégorie et de la recherche
 async function loadGames(category, page = 1) {
     currentCategory = category;
     currentPage = page;
     showLoading();
-    if (page === 1) content.innerHTML = ''; // Clear content if loading a new category or search
+    if (page === 1) content.innerHTML = ''; // effacer le contenu si une nouvelle categorie ou recherche s'effectue
 
+    //Règlage du contenu à afficher
     let url = `${BASE_URL}/games?key=${API_KEY}&page_size=20&page=${page}`;
     if (category === 'new-trending') url += '&ordering=released';
     else if (category === 'best-of-year') url += `&dates=${new Date().getFullYear()}-01-01,${new Date().getFullYear()}-12-31&ordering=-rating`;
     else if (category === 'all-games') url += '&ordering=-added';
 
-    // Include the search query if it exists
+    // Inclure la "search query" s'il existe
     if (searchQuery) url += `&search=${encodeURIComponent(searchQuery)}`;
 
     try {
         const response = await fetch(url);
         const data = await response.json();
-        displayGames(data.results);
+        displayGames(data.results); //displaygames = les résultat à afficher
         
-        // Toggle "Show More" button visibility
+        // Système du bouton "Afficher Plus"
         showMoreButton.style.display = data.next ? 'block' : 'none';
     } catch (error) {
         console.error('Error fetching data:', error);
@@ -68,15 +73,18 @@ async function loadGames(category, page = 1) {
     }
 }
 
-// Display games on the page
+// Afficher les Jeux 
 function displayGames(games) {
     games.forEach(game => {
-        // Log the full game object to the console
+
+        // Créer un log dans la console sur les data donner par RAWG
         console.log("Game Information:", game);
 
+        // Définir les variable d'un "game card"
         const gameCard = document.createElement('div');
         gameCard.classList.add('game-card');
 
+        // Définir les variables dans un "game card"
         const gameImage = game.background_image || placeholderImage;
         const releaseDate = game.released 
             ? new Date(game.released).toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' }) 
@@ -86,10 +94,10 @@ function displayGames(games) {
             : 'Date inconnue';
         const starRating = '★'.repeat(Math.round(game.rating)) + '☆'.repeat(5 - Math.round(game.rating));
 
-        // Set the RAWG game URL using the game's slug
+        // Mise en place de l'URL RAWG pour la redirection
         const gameUrl = `https://rawg.io/games/${game.slug}`;
 
-        // Set up the game card HTML
+        // Mise en place de HTML pour un "game card"
         gameCard.innerHTML = `
             <img src="${gameImage}" alt="${game.name}">
             <h3>${game.name}</h3>
@@ -98,7 +106,7 @@ function displayGames(games) {
             <p>Note : ${starRating}</p>
         `;
 
-        // Add click event to open the game page in a new tab
+        // permet la redirection au click sur un game card
         gameCard.addEventListener('click', () => {
             window.open(gameUrl, '_blank');
         });
@@ -107,5 +115,5 @@ function displayGames(games) {
     });
 }
 
-// Initialize on page load
+// Initialisation
 initialize();
