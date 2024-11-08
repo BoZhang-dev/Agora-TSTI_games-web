@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorateur de Jeux RAWG</title>
+    <link rel="shortcut icon" type="jpg"href="https://raw.githubusercontent.com/BoZhang-dev/Agora-TSTI_games-web/refs/heads/main/objets/icons/main-manette-1-stickers.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- L'entête -->
+    <header>
+        <h1>Explorateur de Jeux RAWG</h1>
+        <nav>
+            <a href="accueil.html">Accueil</a>
+            <a href="A-new-page">A propo du site</a>
+            <a href="javascript:void(0)" id="new-trending">Les Derniers Jeux Apparus</a>
+            <a href="javascript:void(0)" id="best-of-year">Meilleur Jeu de l'Année</a>
+            <a href="javascript:void(0)" id="all-games">Tout les Jeux</a>
+        </nav>
+        <!-- bar de recherche -->
+        <input type="text" id="search-bar" placeholder="Chercher un jeux..." />
+    </header>
+    <main>
+        <div id="loading-overlay">
+            <div class="loading-text">chargement...</div>
+        </div>
+        <div id="content">
+            <h2 id="loading-message">chargement...</h2>
+        </div>
+        <button id="show-more-button" class="show-more-button">Afficher Plus</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
