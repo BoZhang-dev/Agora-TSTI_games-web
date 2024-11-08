@@ -30,19 +30,22 @@ body {
   }
   
   /* Styles de contenu */
-  main {
-    padding: 20px;
-  }
-  
-  #content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-  }
-  
-  #loading-message {
+  #big {
+    font-size: 80px;
     text-align: center;
-    font-size: 1.2em;
+    color: #5dd1ff;
+  }
+
+  main {
+    padding: 40px;
+    color: #a4e5ff;
   }
   
+  #text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+  }
+
+  #midt {
+    font-size: 50px;
+  }
