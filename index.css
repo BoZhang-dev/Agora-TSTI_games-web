@@ -5,7 +5,7 @@ body {
   padding: 0;
   color: white;
   background: linear-gradient(135deg, #1a1a3f, #0d0d24);
-  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-attachment: fixed; /* fix le background à l'endroit */
   background-size: cover;
 }
 
