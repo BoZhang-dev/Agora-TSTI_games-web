@@ -3,8 +3,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0c1941;
   color: white;
+  background: linear-gradient(135deg, #1a1a3f, #0d0d24);
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-size: cover;
 }
 
 /* Styles du Header */

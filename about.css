@@ -1,54 +1,63 @@
 /* Styles General */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1a1a3f;
-    color: white;
-    background-image: url();background-size: cover;
-  }
-  
-  /* Styles du Header */
-  header {
-    background-color: #333;
-    color: white;
-    padding: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* distribuer les espaces entre contenu */
-  }
-  
-  nav a {
-    margin: 0 15px;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  nav a:hover {
-    color: #ff6600;
-  }
-  
-  /* Styles de contenu */
-  #big {
-    font-size: 80px;
-    text-align: center;
-    color: #5dd1ff;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: linear-gradient(135deg, #1a1a3f, #0d0d24);
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-size: cover;
+}
 
-  main {
-    padding: 40px;
-    color: #a4e5ff;
-  }
-  
-  #text {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    text-align: center;
-  }
+/* Styles du Header */
+header {
+  background-color: #333; /* Darker with slight transparency */
+  color: white;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
 
-  #midt {
-    font-size: 40px;
-    text-align: center;
-  }
+nav a {
+  margin: 0 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s; /* Smooth hover effect */
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+/* Styles de contenu */
+#big {
+  font-size: 80px;
+  text-align: center;
+  color: #5dd1ff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Shadow effect for text depth */
+}
+
+main {
+  padding: 40px;
+  color: #a4e5ff;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+#text {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: center;
+  color: #e6f7ff;
+}
+
+#midt {
+  font-size: 50px;
+  text-align: center;
+  color: #41b7e6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}

@@ -77,6 +77,12 @@ async function loadGames(category, page = 1) {
 function displayGames(games) {
     games.forEach(game => {
 
+        // Regarde s'il y a du contenu NSFW
+        const hasNsfwTag = game.tags && game.tags.some(tag => tag.slug === 'nsfw');
+        if (hasNsfwTag) {
+            return; // Skip
+        }
+
         // Créer un log dans la console sur les data donner par RAWG
         console.log("Game Information:", game);
 
