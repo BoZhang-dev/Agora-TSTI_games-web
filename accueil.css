@@ -3,8 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(https://img.freepik.com/psd-gratuit/fond-joueur-accessoires_1419-2366.jpg?t=st=1731079463~exp=1731083063~hmac=361c1e350b8a05a7b398bb2adca2904be76c4fc11a2c1580217be39ec74e4a3b&w=996);background-size: cover;
+    background-color: #1a1a3f;
     color: white;
+    background-image: url();background-size: cover;
   }
   
   /* Styles du Header */
@@ -56,49 +57,4 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-}
-.slide {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
-}
-
-
-.blocHorizontal {
-    display: flex;
-    flex-direction: row;
-    width: 400vw;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-}
-.container {
-    width: 60vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    overflow-x: hidden;
-
-    /* pour ie et mozilla */
-    -ms-overlow-style: none;
-    scrollbar-width: none;
-}
-::-webkit-scrollbar {
-    display: none;
-}
-.one {
-    background-image: url(https://blog.king-jouet.com/wp-content/uploads/2021/08/thumbnail_League-Of-Legends-e1634898736732.jpg); background-size: cover;
-}
-.two {
-  background-image: url(https://cdn.dlcompare.com/others_jpg/upload/gameimage/file/mindustry-tetiere-file-04bdc7b9.jpeg.webp); background-size: cover;
-}
-
-.three {
-  background-image: url(https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/446d93b2-d82b-4853-bb2a-2ae688f9fce4/3187372120/rimworld-pocket-companion-screenshot.png); background-size: cover;
-}
-
-.four {
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkf-d0rUUrr4l0QjOsfHOe2B6MEfAE7xZ2cA&s); background-size: cover;
 }
