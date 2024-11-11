@@ -6,3 +6,4 @@
 <p>-have more or less code explained (in franglais)</p>
 <p>-website use an API</p>
 <p>-website look cool/good overall</p>
+<p>-have a readme and license file</p>
