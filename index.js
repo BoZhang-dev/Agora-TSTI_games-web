@@ -83,8 +83,8 @@ function displayGames(games) {
             return; // Skip
         }
 
-        // Créer un log dans la console sur les data donner par RAWG
-        console.log("Game Information:", game);
+        // Créer un log dans la console sur les data donner par RAWG // le désactive
+        // console.log("Game Information:", game);
 
         // Définir les variable d'un "game card"
         const gameCard = document.createElement('div');
