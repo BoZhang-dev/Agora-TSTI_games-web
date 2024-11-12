@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   color: white;
-  background: linear-gradient(135deg, #1a1a3f, #0d0d24);
+  background: linear-gradient(135deg, #161661, #0f0f36);
   background-attachment: fixed; /* fix le background à l'endroit */
   background-size: cover;
 }

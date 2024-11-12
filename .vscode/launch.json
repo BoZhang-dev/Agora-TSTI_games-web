@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open accueil.html",
-            "file": "C:\\Users\\LENOVO\\Desktop\\TSTI2D\\coding-temp\\Agora-TSTI_games-web-1\\accueil.html"
+            "file": "\\\\srv-dc\\bzhang$\\Documents\\TSTI\\SIN\\Sequence 2\\codes and stuffs\\Agora-TSTI_games-web\\accueil.html"
         }
     ]
 }
