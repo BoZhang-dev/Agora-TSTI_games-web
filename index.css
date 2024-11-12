@@ -126,3 +126,7 @@ main {
 .show-more-button:hover {
   background-color: #ff8533;
 }
+#img {
+  width: 125px;
+  height: auto;
+}

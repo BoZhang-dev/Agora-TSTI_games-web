@@ -68,3 +68,7 @@ main {
   color: #8ec0d4;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
+#img {
+  width: 125px;
+  height: auto;
+}
