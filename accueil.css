@@ -11,7 +11,7 @@ body {
 
 /* Styles du Header */
 header {
-  background-color: #333; 
+  background-color: #c1f06a; 
   color: white;
   padding: 1em;
   display: flex;
@@ -22,7 +22,7 @@ header {
 
 nav a {
   margin: 0 15px;
-  color: #ffffff;
+  color: #1b1b1b;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s; 
