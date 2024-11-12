@@ -36,10 +36,65 @@
         <p id="midt">Vous êtes dans VelovityData</p>
         <p id="text">C'est un site créé par les gameurs pour les gameurs et les gameuses</p>
         <p id="text">(oui on ne Vous a pas oublié !)</p>
-        <a href="index.html"> <p id="text">Accéder à la catalogue des jeux videos</p></a>
+        <a href="index.html"> <p id="txt">Accéder au catalogue de jeux videos</p></a>
     </main>
     <script src="accueil.js"></script>
-    
-        
+    <title>Morpion By Lucie</title>
+    <meta charset="UTF-8">
+    <script src = "morpion.js"></script>
+    <link rel="stylesheet" href="morpion.css">
+</head>
+
+        <body>
+            
+            <h1 id = "txt_joueur">
+                Morpion
+            </h1>
+
+            <table>
+                <tr>
+                    <td id = "case1" onclick="Case(1)">
+                        
+                    </td>
+                    <td id = "case2" onclick="Case(2)">
+                        
+                    </td>
+                    <td id = "case3" onclick="Case(3)">
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id = "case4" onclick="Case(4)">
+                        
+                    </td>
+                    <td id = "case5" onclick="Case(5)">
+                        
+                    </td>
+                    <td id = "case6" onclick="Case(6)">
+                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td id = "case7" onclick="Case(7)">
+                        
+                    </td>
+                    <td id = "case8" onclick="Case(8)">
+                        
+                    </td>
+                    <td id = "case9" onclick="Case(9)">
+                        
+                    </td>
+                </tr>
+            </table>
+            
+            <p>
+                <center>
+                    <br><br><br><br>
+                    <button class="button button1" id="bouton_jouer" onclick="init()">Jouer</button>
+                </center>
+            </p>
+
 </body>
 </html>
