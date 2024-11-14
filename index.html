@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogue de Jeux</title>
-    <link rel="shortcut icon" type="jpg"href="https://raw.githubusercontent.com/BoZhang-dev/Agora-TSTI_games-web/refs/heads/main/objets/icons/main-manette-1-stickers.jpg">
+    <link rel="shortcut icon" type="image/jpg" href="https://raw.githubusercontent.com/BoZhang-dev/Agora-TSTI_games-web/refs/heads/main/objets/icons/main-manette-1-stickers.jpg">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <!-- L'entête -->
+
+    <!-- En-tête du site -->
     <header>
         <a href="accueil.html">
-            <img id ="img"src="https://raw.githubusercontent.com/BoZhang-dev/Agora-TSTI_games-web/refs/heads/main/objets/icons/velocitydata-high-resolution-logo-transparent.png" > 
-            </a>
+            <img id="img" src="https://raw.githubusercontent.com/BoZhang-dev/Agora-TSTI_games-web/refs/heads/main/objets/icons/velocitydata-high-resolution-logo-transparent.png" alt="Logo">
+        </a>
         <nav>
             <a href="accueil.html">Accueil</a>
-            <a href="about.html">A propo du site</a>
+            <a href="about.html">À propos du site</a>
             <a href="javascript:void(0)" id="new-trending">Les Derniers Jeux Apparus</a>
             <a href="javascript:void(0)" id="best-of-year">Meilleur Jeu de l'Année</a>
-            <a href="javascript:void(0)" id="all-games">Tout les Jeux</a>
+            <a href="javascript:void(0)" id="all-games">Tous les Jeux</a>
         </nav>
-        <!-- bar de recherche -->
-        <input type="text" id="search-bar" placeholder="Chercher un jeux..." />
+        <input type="text" id="search-bar" placeholder="Chercher un jeu..." />
     </header>
+
+    
+    <!-- Corps du site -->
     <main>
         <div id="loading-overlay">
             <div class="loading-text">chargement...</div>
@@ -32,6 +35,7 @@
         </div>
         <button id="show-more-button" class="show-more-button">Afficher Plus</button>
     </main>
+    
     <script src="index.js"></script>
 </body>
 </html>

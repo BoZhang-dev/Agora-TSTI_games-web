@@ -4,95 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="shortcut icon" type="jpg"href="https://raw.githubusercontent.com/BoZhang-dev/Agora-TSTI_games-web/refs/heads/main/objets/icons/main-manette-1-stickers.jpg">
+    <link rel="shortcut icon" type="image/jpg" href="https://raw.githubusercontent.com/BoZhang-dev/Agora-TSTI_games-web/refs/heads/main/objets/icons/main-manette-1-stickers.jpg">
     <link rel="stylesheet" href="accueil.css">
 </head>
+
 <body id="body">
-    <!-- L'entête -->
+    
+    <!-- En-tête du site -->
     <header>
         <a href="accueil.html">
-        <img id ="img"src="https://raw.githubusercontent.com/BoZhang-dev/Agora-TSTI_games-web/refs/heads/main/objets/icons/velocitydata-high-resolution-logo-transparent.png" > 
+            <img id="logo" src="https://raw.githubusercontent.com/BoZhang-dev/Agora-TSTI_games-web/refs/heads/main/objets/icons/velocitydata-high-resolution-logo-transparent.png" alt="Logo">
         </a>
         <nav>
             <a href="accueil.html">Accueil</a>
-            <a href="about.html">A propos du site</a>
-            <a href="index.html">Liste des Jeux Vidéo</a>
+            <a href="about.html">À propos du site</a>
+            <a href="index.html">Catalogue de Jeux</a>
         </nav>
     </header>
-    <main>
-      <center><class="container">
-            <p>
-              <span>
-                BIENVENUE !!
-              </span>
-            </p>
-            <p>
-              <span>
-              
-              </span>
-            </p>
-        </center>
-        <p id="midt">Vous êtes dans VelovityData</p>
-        <p id="text">C'est un site créé par les gameurs pour les gameurs et les gameuses</p>
-        <p id="text">(oui on ne Vous a pas oublié !)</p>
+
+    <!-- Corps du site -->
+    <main class="welcome-section">
+        <div class="content">
+            <h1 class="welcome-title">Bienvenue sur VelovityData!</h1>
+            <p class="welcome-subtitle">Un site crée par les gameurs pour les gameurs mais aussi les gameuses</p>
+            <p class="welcome-subtitle">Explorez le monde du gaming à travers une vaste collection de jeux vidéo.</p>
+            <a href="index.html" class="explore-button">Découvrez les jeux</a>
+        </div>
     </main>
+
+    <canvas id="particleCanvas"></canvas>
     <script src="accueil.js"></script>
-    <title>Morpion</title>
-    <meta charset="UTF-8">
-    <script src = "morpion.js"></script>
-    <link rel="stylesheet" href="morpion.css">
-</head>
-<center>
-        <body>
-            
-            <h1 id = "txt_joueur">
-                Morpion
-            </h1>
-
-            <table>
-                <tr>
-                    <td id = "case1" onclick="Case(1)">
-                        
-                    </td>
-                    <td id = "case2" onclick="Case(2)">
-                        
-                    </td>
-                    <td id = "case3" onclick="Case(3)">
-                        
-                    </td>
-                </tr>
-
-                <tr>
-                    <td id = "case4" onclick="Case(4)">
-                        
-                    </td>
-                    <td id = "case5" onclick="Case(5)">
-                        
-                    </td>
-                    <td id = "case6" onclick="Case(6)">
-                        
-                    </td>
-                </tr>
-
-                <tr>
-                    <td id = "case7" onclick="Case(7)">
-                        
-                    </td>
-                    <td id = "case8" onclick="Case(8)">
-                        
-                    </td>
-                    <td id = "case9" onclick="Case(9)">
-                        
-                    </td>
-                </tr>
-            </table>
-            
-            <p>
-                <center>
-                    <br><br><br><br>
-                    <button class="button button1" id="bouton_jouer" onclick="init()">Jouer</button>
-                </center>
-            </p>
-</center>
 </body>
 </html>

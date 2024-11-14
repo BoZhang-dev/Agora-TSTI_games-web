@@ -3,56 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A propos du site</title>
-    <link rel="shortcut icon" type="jpg"href="https://raw.githubusercontent.com/BoZhang-dev/Agora-TSTI_games-web/refs/heads/main/objets/icons/main-manette-1-stickers.jpg">
+    <title>À propos du site</title>
+    <link rel="shortcut icon" type="image/jpg" href="https://raw.githubusercontent.com/BoZhang-dev/Agora-TSTI_games-web/refs/heads/main/objets/icons/main-manette-1-stickers.jpg">
     <link rel="stylesheet" href="about.css">
 </head>
 <body>
-    <!-- L'entête -->
+
+    <!-- en-tête -->
     <header>
-        <a href="accueil.html">
-            <img id ="img"src="https://raw.githubusercontent.com/BoZhang-dev/Agora-TSTI_games-web/refs/heads/main/objets/icons/velocitydata-high-resolution-logo-transparent.png" > 
-            </a>
+        <img src="https://raw.githubusercontent.com/BoZhang-dev/Agora-TSTI_games-web/refs/heads/main/objets/icons/velocitydata-high-resolution-logo-transparent.png" alt="VelocityData Logo" class="logo">
         <nav>
             <a href="accueil.html">Accueil</a>
-            <a href="about.html">A propos du site</a>
-            <a href="index.html">Liste des Jeux Vidéo</a>
+            <a href="about.html">À propos du site</a>
+            <a href="index.html">Catalogue de Jeux</a>
         </nav>
     </header>
-    <main>
-        <p id="big">Coucou !</p>
-        <p id="text">Vous voulez en savoir plus sur notre site ?</p>
-        <p id="text">Voici des informations inutiles mais intéressantes !</p>
 
-        <div>
-            <p id="midt">Fonctionnalités :</p>
-            <p id="text">Ce site permet l'utilisation simple et facile de la recherche de jeu dans une grande base de données !</p>
-            <p id="text">Attention : La barre de recherche permet uniquement d'explorer la catégorie choisie !</p>
-        </div>
-        <div>
-            <p id="midt">On a un github !!</p>
-            <p id="text">On a mis tous nos codes dedans ! voici le lien : <a href="https://github.com/BoZhang-dev/Agora-TSTI_games-web">https://github.com/BoZhang-dev/Agora-TSTI_games-web</a></p>
-        </div>
+    <!-- contenu de la page -->
+    <div class="content-container">
+        <h1>Coucou !</h1>
+        <p>Vous voulez en savoir plus sur notre site ?</p>
+        <p>Voici des informations inutiles mais intéressantes !</p>
+        
+        <h2>Fonctionnalités :</h2>
+        <p>Ce site permet une recherche facile et simplifiée dans une grande base de données de jeux !</p>
+        <p>Note : La barre de recherche ne recherche uniquement dans la catégorie sélectionnée.</p>
+        
+        <h2>Nous avons un GitHub !</h2>
+        <p>Voir le code source : <a href="ttps://github.com/BoZhang-dev/Agora-TSTI_games-web">GitHub</a></p>
+        
+        <h2>Nous utilisons l'API RAWG !</h2>
+        <p>Sans RAWG rien de tout ça n'était possible, découvrez leur site ici ! <a href="htpps://rawg.io">RAWG</a></p>
+        
+        <h2>Ce site est sous licence MIT.</h2>
+        <p>En savoir plus ! <a href="https://github.com/BoZhang-dev/Agora-TSTI_games-web/tree/main?tab=License-1-ov-file">License</a></p>
+        <p>Créé par BoZhang-dev et Noahaa12.</p>
+        <p>Pour des questions, contactez-nous sur Discord : 'draskbright' et 'noahaa12'</p>
+    </div>
 
-        <div>
-            <p id="midt">On a utilisé l'API RAWG pour créer ce site !!</p>
-            <p id="text">Sans eux rien ne serait possible ! voici leur site web : <a href="https://rawg.io/">https://rawg.io/</a></p>
-        </div>
-
-        <div>
-            <p id="midt">Ce site a été créé dans un but éducatif, ce site est donc sous license MIT ! </p>
-            <p id="text">ce qui veut dire que vous pouvez faire quasiment tout ce que vous voulez 🙂 </p>
-            <p id="text"><a href="https://github.com/BoZhang-dev/Agora-TSTI_games-web/blob/main/LICENSE">Voir la license MIT en entier en cliquant ici</a></p>
-            <p id="text">PS : la license est en anglais</p>
-            <p id="text">Ce site a été créé par BoZhang-dev (on m'appelle aussi DB) et par Noahaa12</p>
-        </div>
-
-        <div>
-            <p id="smidt">Si vous avez des questions n'hésitez pas à nous les poser depuis Discord :</p>
-            <p id="smidt">'draskbright' et 'noahaa12'</p>
-        </div>
-
-    </main>
+    <canvas id="particleCanvas"></canvas>
     <script src="about.js"></script>
 </body>
 </html>

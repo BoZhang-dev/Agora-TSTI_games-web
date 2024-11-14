@@ -1,134 +1,125 @@
-/* Styles General */
+/* Style globals */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  color: white;
-  background: linear-gradient(135deg, #161661, #0f0f36);
-  background-attachment: fixed; /* fix le background à l'endroit */
+  color: #ffffff;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  background-attachment: fixed;
   background-size: cover;
 }
 
-/* Styles du Header */
+/* Section en-tête */
 header {
-  background-color: #b1b1b1;
-  color: white;
+  background-color: rgba(33, 37, 41, 0.9);
+  color: #ffffff;
   padding: 1em;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* distribuer les espaces entre contenu */
+  justify-content: space-between;
 }
 
-nav a {
+header a {
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 600;
   margin: 0 15px;
-  color: #1b1b1b;
-  text-decoration: none;
-  font-weight: bold;
-  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-nav a:hover {
-  color: #ff6600;
+header a:hover {
+  color: #17a2b8;
 }
 
-/* Styles du bar de recherche */
 #search-bar {
   padding: 8px;
   font-size: 1em;
   border: none;
   border-radius: 4px;
+  width: 200px;
 }
 
-/* Styles "Chargement" Overlay */
+#img {
+  width: 100px;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+header a img:hover {
+  transform: scale(1.1);
+}
+
+/* Section chargement */
 #loading-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Couleur noir semi-transparent */
+  background-color: rgba(0, 0, 0, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Se superposer sur tout les contenus */
-  visibility: hidden; /* Cacher par défaut */
+  z-index: 9999;
+  visibility: hidden;
 }
 
 .loading-text {
   font-size: 2em;
-  color: #ff6600;
-  text-align: center;
+  color: #ffc107;
+  font-weight: bold;
 }
 
-/* Styles de contenu */
-main {
-  padding: 20px;
-}
-
+/* Section "game-card" */
 #content {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 30px;
   justify-content: center;
+  padding: 20px;
 }
 
-#loading-message {
-  text-align: center;
-  font-size: 1.2em;
-}
-
-/* Styles du game card */
 .game-card {
-  background-color: #004883;
-  width: 300px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #212529;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  text-align: center;
-  color: white;
-  transition: background-color 0.3s ease;
+  color: #ffffff;
+  transition: transform 0.3s, background-color 0.3s;
 }
 
 .game-card img {
   width: 100%;
-  height: 250px;
+  height: 200px;
   object-fit: cover;
-  margin: auto;
 }
 
-.game-card h3 {
-  padding: 20px 10px;
-  font-size: 1.1em;
-  color: #ffffff;
-}
-
-.game-card p {
-  padding: 5px 10px;
-  font-size: 0.9em;
-  color: #ffffff;
+.game-card h3, .game-card p {
+  margin: 10px;
+  text-align: center;
 }
 
 .game-card:hover {
-  background-color: #4c3a75;
+  background-color: #404950;
+  transform: scale(1.05);
 }
 
-/* Bouton "Afficher Plus" */
+/* Bouton afficher plus */
 .show-more-button {
-  background-color: #ff6600;
+  background-color: #17a2b8;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1em;
-  margin: 20px auto;
   display: block;
+  margin: 20px auto;
 }
 
 .show-more-button:hover {
-  background-color: #ff8533;
-}
-#img {
-  width: 125px;
-  height: auto;
+  background-color: #138496;
 }

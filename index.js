@@ -1,7 +1,7 @@
 const API_KEY = 'fa64d94a92904f01822a854b93741b2f'; //Le clé d'API
 const BASE_URL = 'https://api.rawg.io/api'; //La base pour utilisé l'API
 
-//asseigner les IDs en tant que variable 
+//assigner les IDs en tant que variable 
 const content = document.getElementById('content'); 
 const loadingOverlay = document.getElementById('loading-overlay');
 const showMoreButton = document.getElementById('show-more-button');
@@ -47,9 +47,9 @@ async function loadGames(category, page = 1) {
     currentCategory = category;
     currentPage = page;
     showLoading();
-    if (page === 1) content.innerHTML = ''; // effacer le contenu si une nouvelle categorie ou recherche s'effectue
+    if (page === 1) content.innerHTML = ''; // effacer le contenu si une nouvelle catégorie ou recherche s'effectue
 
-    //Règlage du contenu à afficher
+    //Réglage du contenu à afficher
     let url = `${BASE_URL}/games?key=${API_KEY}&page_size=20&page=${page}`;
     if (category === 'new-trending') url += '&ordering=released';
     else if (category === 'best-of-year') url += `&dates=${new Date().getFullYear()}-01-01,${new Date().getFullYear()}-12-31&ordering=-rating`;
@@ -61,7 +61,7 @@ async function loadGames(category, page = 1) {
     try {
         const response = await fetch(url);
         const data = await response.json();
-        displayGames(data.results); //displaygames = les résultat à afficher
+        displayGames(data.results);
         
         // Système du bouton "Afficher Plus"
         showMoreButton.style.display = data.next ? 'block' : 'none';
@@ -83,7 +83,7 @@ function displayGames(games) {
             return; // Skip
         }
 
-        // Créer un log dans la console sur les data donner par RAWG // le désactive
+        // Créer un log dans la console sur les data donner par RAWG "//" le désactive
         // console.log("Game Information:", game);
 
         // Définir les variable d'un "game card"
@@ -112,7 +112,7 @@ function displayGames(games) {
             <p>Note : ${starRating}</p>
         `;
 
-        // permet la redirection au click sur un game card
+        // permet la redirection au click sur un "game card"
         gameCard.addEventListener('click', () => {
             window.open(gameUrl, '_blank');
         });

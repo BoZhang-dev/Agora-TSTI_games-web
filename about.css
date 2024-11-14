@@ -1,74 +1,92 @@
-/* Styles General */
-body {
-  font-family: Arial, sans-serif;
+/* reset la taille de l'en-tête */
+* {
   margin: 0;
   padding: 0;
-  color: white;
-  background: linear-gradient(135deg, #161661, #0f0f36);
-  background-attachment: fixed; /* fix le background à l'endroit */
-  background-size: cover;
+  box-sizing: border-box;
 }
 
-/* Styles du Header */
+/* Style globals */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  background: linear-gradient(135deg, #243b55, #141e30);
+}
+
+/* Section en-tête */
 header {
-  background-color: #b1b1b1;
-  color: white;
+  background-color: rgba(33, 37, 41, 0.9);
   padding: 1em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  height: 50px;
 }
 
 nav a {
-  margin: 0 15px;
-  color: #1b1b1b;
+  color: #ffffff;
   text-decoration: none;
+  margin: 0 15px;
   font-weight: bold;
-  transition: color 0.3s; 
 }
 
 nav a:hover {
-  color: #ff6600;
+  color: #ffc107;
 }
 
-/* Styles de contenu */
-#big {
-  font-size: 80px;
+/* section contenu */
+.content-container {
+  background-color: rgba(33, 37, 41, 0.8); /* Slightly transparent background */
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  color: #ffc107;
+  font-size: 2.5em;
   text-align: center;
-  color: #5dd1ff;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
+  margin-bottom: 20px;
 }
 
-main {
-  padding: 40px;
-  color: #a4e5ff;
-  max-width: 1800px;
-  margin: auto;
+h2 {
+  color: #00d1b2;
+  font-size: 1.5em;
+  margin: 15px 0;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
   line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
-#text {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 30px;
-  text-align: center;
-  color: #e6f7ff;
+a {
+  color: #17a2b8;
+  text-decoration: none;
 }
 
-#midt {
-  font-size: 50px;
-  text-align: center;
-  color: #41b7e6;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+a:hover {
+  color: #ffc107;
 }
 
-#smidt {
-  font-size: 38px;
-  text-align: center;
-  color: #8ec0d4;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-}
-#img {
-  width: 125px;
-  height: auto;
+/* section particules */
+#particleCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
