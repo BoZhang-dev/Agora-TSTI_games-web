@@ -17,7 +17,7 @@ window.addEventListener('resize', resizeCanvas);
 // Initialise les particules en fonction de la taille du canvas
 function initParticles() {
     particlesArray = [];
-    const numParticles = Math.floor((canvas.width * canvas.height) / 8000); // Adjust density
+    const numParticles = Math.floor((canvas.width * canvas.height) / 8000);
     for (let i = 0; i < numParticles; i++) {
         particlesArray.push(new Particle());
     }
@@ -55,7 +55,7 @@ Particle.prototype.draw = function() {
 
 // Anime les particules frame par frame en redessiner chaque particule
 function animateParticles() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas for redrawing
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     particlesArray.forEach(particle => {
         particle.update();
         particle.draw();
